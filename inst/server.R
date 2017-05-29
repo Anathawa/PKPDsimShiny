@@ -55,7 +55,7 @@ shinyServer(function(input, output) {
             pmin1 <- -1
             pmax1 <-  1
           }
-          w <- paste(w, fluidRow(column(6, sliderInput(names(p)[idx], names(p)[idx], min=pmin1, max=pmin2, value=val1)
+          w <- paste(w, fluidRow(column(6, sliderInput(names(p)[idx], names(p)[idx], min=pmin1, max=pmax1, value=val1)
           )))
         }
       }
